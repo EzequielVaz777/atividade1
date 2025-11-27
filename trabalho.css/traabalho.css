@@ -1,0 +1,88 @@
+/* Reset Básico para remover margens padrão */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    /* Mude a fonte aqui */
+    background-color: #f4f4f4;
+    /* Cor de fundo (Semper de fundo no seu esboço) */
+}
+
+/* Estilo do Cabeçalho e Navegação */
+header {
+    display: flex;
+    /* Alinha o logo e o nav lado a lado */
+    justify-content: space-between;
+    /* Espaço entre eles */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    /* Cor do topo */
+    border-bottom: 1px solid #ddd;
+    /* Faz o cabeçalho ficar fixo no topo (opcional) */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    /* Espaço entre os links */
+}
+
+header a {
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: black;
+}
+
+/* Estilo das caixas de conteúdo (O layout principal) */
+.content-box {
+    width: 80%;
+    /* Largura da caixa */
+    max-width: 1000px;
+    /* Largura máxima */
+    margin: 30px auto;
+    /* Centraliza a caixa na tela */
+    padding: 20px;
+    border: 2px solid black;
+    /* A borda preta do seu esboço */
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+/* Estilo da seção de Projetos */
+.projeto-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 2 colunas */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.projeto {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilo da seção Sobre Mim */
+.sobre-conteudo {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.texto-sobre,
+.contato {
+    flex: 1;
+    /* Faz as duas caixas terem o mesmo tamanho */
+}
+
+.contato a {
+    color: red;
+    /* Cor do link de email como no seu esboço */
+}
